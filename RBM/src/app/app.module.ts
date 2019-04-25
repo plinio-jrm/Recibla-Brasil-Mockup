@@ -5,17 +5,19 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { AllMaterialsModule } from './modules/all-materials/all-materials.module';
+//import { AllMaterialsModule } from './modules/all-materials/all-materials.module';
+import { RbmNavbarComponent } from './components/rbm-navbar/rbm-navbar.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    RbmNavbarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule,
-    AllMaterialsModule
+    BrowserAnimationsModule
+    //AllMaterialsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
