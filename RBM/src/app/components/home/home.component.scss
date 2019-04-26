@@ -1,0 +1,8 @@
+$home-info: 2em;
+$home-info-border-color: rgb(175, 175, 175);
+
+.home-carousel-info {
+   margin-top: $home-info;
+   border: 1mm solid $home-info-border-color;
+   width: 100%;
+}
