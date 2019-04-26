@@ -6,7 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./rbm-navbar.component.scss']
 })
 export class RbmNavbarComponent implements OnInit {
-  // https://stackoverflow.com/questions/46348194/navbar-toggle-not-working-with-angular-4-ng-bootstrap
   isNavbarCollapsed = true;
 
   constructor() { }

@@ -8,11 +8,14 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { RbmNavbarComponent } from './components/rbm-navbar/rbm-navbar.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { AppRouterModule } from './modules/router/router.module';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    RbmNavbarComponent
+    RbmNavbarComponent,
+    HomeComponent
   ],
   imports: [
     NgbModule,
@@ -20,7 +23,8 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AppRouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

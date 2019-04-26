@@ -1,23 +1,31 @@
-<nav class="navbar navbar-expand-md navbar-light bg-light">
-  <button class="navbar-toggler navbar-toggler-right" type="button" (click)="isNavbarCollapsed = !isNavbarCollapsed" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-  </button>
-  <a class="navbar-brand" href="#">Navbar</a>
-  <div [ngbCollapse]="isNavbarCollapsed" class="navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="text" placeholder="O que deseja pesquisar?">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar...</button>
-    </form>
+<nav class="navbar navbar-expand-lg navbar-dark bg-nav-rbm">
+  <div class="container">
+    <button class="navbar-toggler navbar-toggler-right" type="button" (click)="isNavbarCollapsed = !isNavbarCollapsed" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand">Recibla Brasil</a>
+    <div [ngbCollapse]="isNavbarCollapsed" class="navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="/home" routerLinkActive="active">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" routerLink="/empreendedores" routerLinkActive="active">Empreendedores</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/quemSomos" routerLinkActive="active">Quem somos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/contatos" routerLinkActive="active">Contatos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/login" routerLinkActive="active">Login</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="O que deseja pesquisar?">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar...</button>
+      </form>
+    </div>
   </div>
 </nav>
