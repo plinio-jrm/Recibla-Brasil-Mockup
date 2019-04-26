@@ -3,10 +3,11 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-//import { AllMaterialsModule } from './modules/all-materials/all-materials.module';
 import { RbmNavbarComponent } from './components/rbm-navbar/rbm-navbar.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -14,10 +15,12 @@ import { RbmNavbarComponent } from './components/rbm-navbar/rbm-navbar.component
     RbmNavbarComponent
   ],
   imports: [
+    NgbModule,
     BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule
-    //AllMaterialsModule
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
