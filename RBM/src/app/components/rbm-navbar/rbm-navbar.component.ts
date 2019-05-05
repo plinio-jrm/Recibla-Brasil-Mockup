@@ -6,9 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./rbm-navbar.component.scss']
 })
 export class RbmNavbarComponent implements OnInit {
-  isNavbarCollapsed = true;
+  isNavbarCollapsed: boolean = true;
 
   constructor() { }
   ngOnInit() {
+  }
+
+  CloseOnClick(): void {
+    this.isNavbarCollapsed = true;
   }
 }
