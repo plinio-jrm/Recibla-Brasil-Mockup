@@ -1,0 +1,45 @@
+<div class="row" style="margin-top: 2em">
+  <div class="col-sm-auto col-md-1 col-lg-2"></div>
+  <div class="col-sm-12 col-md-10 col-lg-8">
+    <div class="card login-form">
+      <div class="card-header">
+        Acesso do usuário
+      </div>
+      <div class="card-body">
+        <form>
+          <div class="form-group form-reorder">
+            <div class="row">
+              <div class="col-12">
+                <label for="usertype">Tipo de usuário</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 col-md-6 radio-div">
+                <input class="radio-input" type="radio" ng-model="usertype" value="new" [checked]="!bNewUser" (click)="oldUser()">Eu ja tenho cadastro
+              </div>
+              <div class="col-12 col-md-6 radio-div">
+                <input class="radio-input" type="radio" ng-model="usertype" value="old" [checked]="bNewUser" (click)="newUser()">Ainda não sou cadastrado
+              </div>
+            </div>
+          </div>
+          <hr>
+          <div class="form-group">
+            <label for="username">E-mail</label>
+            <input type="text"  class="form-control" id="email" name="u_email">
+          </div>
+          <div class="form-group" *ngIf="bNewUser">
+            <label for="username">Confirme seu e-mail</label>
+            <input type="text"  class="form-control" id="email" name="u_email">
+          </div>
+          <div class="form-group">
+            <label for="username">Senha</label>
+            <input type="text"  class="form-control" id="password" name="u_password">
+          </div>
+          <hr>
+          <button type="button" class="btn btn-outline-secondary btn-block">{{GetButtonData()}}</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-auto col-md-1 col-lg-2"></div>
+</div>

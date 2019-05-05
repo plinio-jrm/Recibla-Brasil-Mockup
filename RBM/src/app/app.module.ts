@@ -8,15 +8,18 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { RbmNavbarComponent } from './components/rbm-navbar/rbm-navbar.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { AppRouterModule } from './modules/router/router.module';
 import { HomeComponent } from './components/home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NotFoundComponent } from './components/not-found/not-found.component';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     RbmNavbarComponent,
-    HomeComponent
+    HomeComponent,
+    NotFoundComponent,
+    LoginComponent
   ],
   imports: [
     NgbModule,
@@ -25,7 +28,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ReactiveFormsModule,
     HttpClientModule,
     AppRoutingModule,
-    AppRouterModule,
     BrowserAnimationsModule
   ],
   providers: [],

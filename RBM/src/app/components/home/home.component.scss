@@ -1,10 +1,16 @@
 $home-info: 0em;
-$home-info-border-color: rgba(224, 228, 224, 0.493);
-$home-h3-color: rgb(63, 70, 64);
+$home-h3-color: rgb(204, 224, 207);
+
+.home-top {
+   background-color: #013401;
+
+   @media (max-width: 768px) {
+      height: 330px;
+   }
+}
 
 .home-carousel-info {
    margin-top: $home-info;
-   border: 1px solid $home-info-border-color;
    height: 200px;
    padding: 2em 0;
 
@@ -22,10 +28,14 @@ $home-h3-color: rgb(63, 70, 64);
 
    .home-h3 {
       color: $home-h3-color !important;
-      text-shadow: 2px 2px 4px rgb(100, 105, 101);
+      text-shadow: 2px 2px 4px rgb(35, 36, 35);
+
+      @media (max-width: 768px) {
+         text-align: center !important;
+      }
 
       .inner-h3 {
-         font-size: 20pt !important;
+         font-size: 26pt !important;
          font-style: italic;
          font-weight: bold;
       }
@@ -34,4 +44,18 @@ $home-h3-color: rgb(63, 70, 64);
 
 .home-carousel-vert-center {
    align-items: center;
+}
+
+.home-bottom {
+   margin-top: 30px;
+
+   .empreed {
+      font-weight: bold;
+      text-decoration: underline;
+   }
+
+   .card {
+      margin-top: 1em;
+      margin-bottom: 1em;
+   }
 }

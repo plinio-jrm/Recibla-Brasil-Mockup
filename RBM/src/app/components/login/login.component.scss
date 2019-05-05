@@ -1,0 +1,26 @@
+.login-form {
+    font-weight: normal;
+    font-size: 13pt;
+
+    label {
+        font-size: 16pt;
+    }
+
+    .radio-input {
+        margin-right: 10px;
+    }
+
+    .radio-div {
+        margin-top: 10px;
+    }
+
+    .form-reorder {
+        @media only screen and (min-width: 768px) {
+            text-align: center !important;
+        }
+
+        @media only screen and (max-width: 768px) {
+            text-align: left !important;
+        }
+    }
+}
