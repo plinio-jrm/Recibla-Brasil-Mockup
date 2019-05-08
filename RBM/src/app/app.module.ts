@@ -13,6 +13,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { LoginComponent } from './components/login/login.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { InfoSlidesComponent } from './components/home/info-slides/info-slides.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ContactComponent } from './components/contact/contact.component';
     HomeComponent,
     NotFoundComponent,
     LoginComponent,
-    ContactComponent
+    ContactComponent,
+    InfoSlidesComponent
   ],
   imports: [
     NgbModule,

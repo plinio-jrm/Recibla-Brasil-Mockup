@@ -1,0 +1,39 @@
+$home-info: 0em;
+$home-h3-color: rgb(204, 224, 207);
+
+.home-carousel-info {
+   margin-top: $home-info;
+   height: 200px;
+   padding: 2em 0;
+
+   img {
+      @media screen and (max-width: 720px) {
+         width: 100px;
+      }
+      @media screen and (max-width: 960px) {
+         width: 150px;
+      }
+      @media screen and (min-width: 961px) {
+         width: 150px;
+      }
+   }
+
+   .home-h3 {
+      color: $home-h3-color !important;
+      text-shadow: 2px 2px 4px rgb(35, 36, 35);
+
+      @media (max-width: 768px) {
+         text-align: center !important;
+      }
+
+      .inner-h3 {
+         font-size: 26pt !important;
+         font-style: italic;
+         font-weight: bold;
+      }
+   }
+}
+
+.home-carousel-vert-center {
+   align-items: center;
+}
