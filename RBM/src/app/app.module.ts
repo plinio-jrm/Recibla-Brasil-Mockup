@@ -14,6 +14,7 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
 import { LoginComponent } from './components/login/login.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { InfoSlidesComponent } from './components/home/info-slides/info-slides.component';
+import { QuemSomosComponent } from './components/home/quem-somos/quem-somos.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { InfoSlidesComponent } from './components/home/info-slides/info-slides.c
     NotFoundComponent,
     LoginComponent,
     ContactComponent,
-    InfoSlidesComponent
+    InfoSlidesComponent,
+    QuemSomosComponent
   ],
   imports: [
     NgbModule,

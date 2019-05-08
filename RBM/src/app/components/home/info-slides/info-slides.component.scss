@@ -1,10 +1,15 @@
 $home-info: 0em;
-$home-h3-color: rgb(204, 224, 207);
+$home-h3-color: rgb(57, 65, 58);
 
 .home-carousel-info {
    margin-top: $home-info;
-   height: 200px;
-   padding: 2em 0;
+   background-color: rgb(213, 231, 216) !important;
+   padding: 20px;
+   border-radius: 4px;
+
+   @media (max-width: 768px) {
+      height: 330px;
+   }
 
    img {
       @media screen and (max-width: 720px) {
@@ -20,7 +25,7 @@ $home-h3-color: rgb(204, 224, 207);
 
    .home-h3 {
       color: $home-h3-color !important;
-      text-shadow: 2px 2px 4px rgb(35, 36, 35);
+      text-shadow: 2px 2px 4px rgb(78, 80, 78);
 
       @media (max-width: 768px) {
          text-align: center !important;

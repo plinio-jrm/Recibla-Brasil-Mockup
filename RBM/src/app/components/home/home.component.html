@@ -1,36 +1,41 @@
-<div class="row">
-  <div class="col-12">
-    <div class="row home-top">
-      <div class="col-12">
-        <app-info-slides></app-info-slides>
-      </div>
-    </div>
-    <div class="row home-bottom">
-      <div class="col-sm-12 col-md-6">
-        <div class="card">
-          <div class="card-header">
-            Usabilidade
-          </div>
-          <div class="card-body">
-            <blockquote class="blockquote mb-0">
-              <p>Facil de usar. Em poucos cliques você executa o que quer.</p>
-            </blockquote>
-          </div>
+<div class="container-fluid">
+  <div class="row" style="margin: 2em 0">
+    <div class="col-12 col-md-8">
+      <div class="row">
+        <div class="col-12 ">
+          <app-info-slides class="home-top"></app-info-slides>
         </div>
       </div>
-      <div class="col-sm-12 col-md-6">
-        <div class="card">
+      <div class="row home-bottom">
+        <div class="col-12 col-sm-12 col-md-6">
+          <div class="card">
             <div class="card-header">
-              Segurança
+              Usabilidade
             </div>
             <div class="card-body">
               <blockquote class="blockquote mb-0">
-                <p>Execute suas transações com segurança e confiança.</p>
+                <p>Facil de usar. Em poucos cliques você executa o que quer.</p>
               </blockquote>
             </div>
           </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6">
+          <div class="card">
+              <div class="card-header">
+                Segurança
+              </div>
+              <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                  <p>Execute suas transações com segurança e confiança.</p>
+                </blockquote>
+              </div>
+            </div>
+        </div>
       </div>
     </div>
+    <div class="col-12 col-md-4">
+      <!-- Quem somos -->
+      <app-quem-somos></app-quem-somos>
+    </div>
   </div>
-  <div class="col-12"></div>
 </div>
